@@ -1,0 +1,21 @@
+llm:
+  base_url: "https://api.mimo.com/v1"
+  model: "MiMo"
+  api_key: "YOUR_API_KEY"
+  temperature: 0.3
+  max_tokens: 4096
+
+agents:
+  case_generator:
+    rounds: 4
+    max_steps: 20
+  api_tester:
+    retry: 3
+  ui_tester:
+    browser: "chromium"
+    timeout: 30000
+  defect_analyzer:
+    reasoning_strategy: "react"
+    max_rounds: 5
+  risk_assessor:
+    confidence_threshold: 0.7
